@@ -1,13 +1,13 @@
 {% extends "encyclopedia/layout.html" %}
 
 {% block title %}
-    {{title}} - Encyclopedia
+Error - Encyclopedia
 {% endblock %}
 
 {% block body %}
 
-    {{content|safe}}
+<h1>Error</h1>
 
-<a href="{% url 'editEntry' title %}">Edit</a>
+<p>{{errorContent}}</p>
 
 {% endblock %}
