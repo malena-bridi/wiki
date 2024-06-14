@@ -17,8 +17,16 @@ textarea {
     width: 80%;
 }
 
+.icon {
+    width: 15px;
+}
+
 .main {
     padding: 10px;
+}
+
+.row {
+    margin-left: unset;
 }
 
 .search {
@@ -31,8 +39,52 @@ textarea {
     background-color: #f0f0f0;
     height: 100vh;
     padding: 20px;
+    text-align: center;
+    box-shadow: 0.5px 0.5px 10px #aaa;
+}
+
+.sidebar a {
+    color: #444;
+}
+
+.sidebar a:hover {
+    color: #444;
+    text-decoration-thickness: 1px;
 }
 
 .sidebar h2 {
     margin-top: 5px;
+}
+
+#globeImg {
+    width: 80%;
+    filter: drop-shadow(5px 5px 8px black);
+    margin-bottom: 20px;
+}
+
+.search-form {
+    position: relative; /* Para que los elementos posicionados dentro se basen en este contenedor */
+}
+
+.search-container {
+    position: relative; /* Para poder posicionar absolutamente la imagen dentro */
+    display: inline-flex; /* Usamos flexbox para alinear elementos en línea */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    margin-bottom: 25px;
+}
+
+.search {
+    padding-left: 25px; /* Ajusta el padding izquierdo para dejar espacio para la imagen */
+    border: 1px solid #ccc; /* Borde del campo de búsqueda */
+    border-radius: 20px; /* Borde redondeado del campo de búsqueda */
+    font-size: 13px; /* Tamaño de fuente del campo de búsqueda */
+    width: 220px;
+    height: 30px;
+}
+
+#lensImg {
+    position: absolute; /* Posición absoluta para que se superponga al input */
+    left: 8px; /* Ajusta el espacio a la izquierda */
+    height: 12px; /* Ajusta el tamaño de la imagen */
+    width: auto; /* Para mantener la proporción de la imagen */
 }

@@ -31,7 +31,7 @@ def search(request):
             else:
                 return render(request, "encyclopedia/errorPage.html", {"errorContent":notFound})
             
-def newEntry(request):
+def newPage(request):
     if request.method == 'POST':
         title = request.POST.get("Title").strip().lower()
         if title in [entry.lower() for entry in util.list_entries()]:
@@ -41,9 +41,9 @@ def newEntry(request):
             fileName = f"entries/{title}.md"
             default_storage.save(fileName, ContentFile(request.POST.get("Content")))
             return redirect('entryPage', title=title)
-    return render(request, "encyclopedia/newEntry.html")
+    return render(request, "encyclopedia/newPage.html")
 
-def editEntry(request, title):
+def editPage(request, title):
     entry = util.get_entry(title)
     if entry:
         if request.method == 'POST':
@@ -52,7 +52,7 @@ def editEntry(request, title):
                 file.write(request.POST.get("Content"))
             return redirect('entryPage', title=title)
         else:
-            return render(request, "encyclopedia/editEntry.html", {"title":title.capitalize(), "content": util.get_entry(title)})
+            return render(request, "encyclopedia/editPage.html", {"title":title.capitalize(), "content": util.get_entry(title)})
     else:
         return render(request, "encyclopedia/errorPage.html", {"errorContent": notFound})
 
