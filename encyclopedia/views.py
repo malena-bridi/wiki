@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
+from django.core.files.base import ContentFile
+from django.core.files.storage import default_storage
 from . import util
 import markdown2, random
-
-from django.http import HttpResponse
 
 notFound = "The requested page was not found."
 
@@ -37,9 +37,9 @@ def newEntry(request):
         if title in [entry.lower() for entry in util.list_entries()]:
             return render(request, "encyclopedia/errorPage.html", {"errorContent":"A page with this title already exists."})
         else:
+            title = request.POST.get("Title").strip().capitalize()
             fileName = f"entries/{title}.md"
-            with open(fileName, 'w') as file:
-                file.write(request.POST.get("Content"))
+            default_storage.save(fileName, ContentFile(request.POST.get("Content")))
             return redirect('entryPage', title=title)
     return render(request, "encyclopedia/newEntry.html")
 
