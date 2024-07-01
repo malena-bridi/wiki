@@ -9,9 +9,9 @@ Create New Page - Encyclopedia
 <h1>New Page</h1>
 <form action="{% url 'newPage' %}" method="post">
     {% csrf_token %}
-    <input type="text" name="Title" placeholder="Title"><br>
-    <textarea name="Content" placeholder="Content"></textarea>
-    <input type="submit">
+    <input type="text" name="Title" placeholder="Title" class="inputBox"><br>
+    <textarea name="Content" placeholder="Content"></textarea><br>
+    <input type="submit" value="Submit">
 </form>
 
 {% endblock %}

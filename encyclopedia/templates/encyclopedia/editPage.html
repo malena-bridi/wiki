@@ -9,7 +9,7 @@ Editing {{title}} - Encyclopedia
 <h1>{{title}}</h1>
 <form action="{% url 'editPage' title %}" method="post">
     {% csrf_token %}
-    <textarea name="Content" placeholder="Content">{{content}}</textarea>
+    <textarea name="Content" placeholder="Content">{{content}}</textarea><br>
     <input type="submit" value="Submit">
 </form>
 
