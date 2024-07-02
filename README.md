@@ -8,20 +8,20 @@ Wikipedia-like online encyclopedia where users can view, create, edit, and searc
 <img src="https://seeklogo.com/images/D/django-logo-4C5ECF7036-seeklogo.com.png" width="15" height="15"> Django
 
 ## Usage
-* **Home Page:** Lists all encyclopedia entries.
-* **Entry Page:** Displays the content of a specific entry.
-* **Search:** Allows searching for entries by title or content.
-* **Create New Page:** Provides a form to create a new entry.
-* **Edit Page:** Allows editing an existing entry.
-* **Random Page:** Redirects to a random entry.
+* **Home page:** lists all encyclopedia entries.
+* **Entry page:** displays the content of a specific entry.
+* **Search:** allows searching for entries by title or content.
+* **Create new page:** provides a form to create a new entry.
+* **Edit page:** allows editing an existing entry.
+* **Random page:** redirects to a random entry.
 
 ## Preview
 <div align="center">
-  <img src="https://github.com/malena-bridi/googlent/assets/134395414/bf69c2f5-f95c-4a1b-9f0b-d5f90a814096" alt="Homepage preview" />
+  <img src="https://github.com/malena-bridi/wiki/assets/134395414/e974c624-b659-483b-82c0-d09150d60f47" alt="Homepage preview" />
 </div>
 <div align="center">
-  <img src="https://github.com/malena-bridi/googlent/assets/134395414/9a4f070e-f8aa-4ca6-9ea2-e8d84f4d6807" alt="Images page preview" />
+  <img src="https://github.com/malena-bridi/wiki/assets/134395414/85f85fe8-e2a8-45b0-a99c-1b093ff2438d" alt="Images page preview" />
 </div>
 <div align="center">
-  <img src="https://github.com/malena-bridi/googlent/assets/134395414/52b4ea99-7edd-4ca3-a5ef-673883cfdaaa" alt="Advanced Search page preview" />
+  <img src="https://github.com/malena-bridi/wiki/assets/134395414/4225dd3e-948e-4e58-b474-f3e9d40785f5" alt="Advanced Search page preview" />
 </div>
